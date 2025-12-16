@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Criptografía Clásica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Criptografía Clásica</h1>
+<p>Cifrado y Descifrado de texto</p>
+
+<!-- CÉSAR -->
+<section>
+    <h2>Cifrado César</h2>
+    <textarea id="cesarTexto" placeholder="Texto"></textarea>
+    <input type="number" id="cesarClave" placeholder="Desplazamiento">
+    <button onclick="cifrarCesar()">Cifrar</button>
+    <button onclick="descifrarCesar()">Descifrar</button>
+    <p id="cesarResultado"></p>
+</section>
+
+<!-- VIGENERE -->
+<section>
+    <h2>Cifrado Vigenère</h2>
+    <textarea id="vigTexto" placeholder="Texto"></textarea>
+    <input type="text" id="vigClave" placeholder="Clave">
+    <button onclick="cifrarVigenere()">Cifrar</button>
+    <button onclick="descifrarVigenere()">Descifrar</button>
+    <p id="vigResultado"></p>
+</section>
+
+<!-- TRANSPOSICIÓN -->
+<section>
+    <h2>Transposición Columnar</h2>
+    <textarea id="colTexto" placeholder="Texto"></textarea>
+    <input type="text" id="colClave" placeholder="Clave">
+    <button onclick="cifrarColumnar()">Cifrar</button>
+    <button onclick="descifrarColumnar()">Descifrar</button>
+    <p id="colResultado"></p>
+</section>
+
+<!-- AFÍN -->
+<section>
+    <h2>Cifrado Afín</h2>
+    <textarea id="afinTexto" placeholder="Texto"></textarea>
+    <input type="number" id="afinA" placeholder="a">
+    <input type="number" id="afinB" placeholder="b">
+    <button onclick="cifrarAfin()">Cifrar</button>
+    <button onclick="descifrarAfin()">Descifrar</button>
+    <p id="afinResultado"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
